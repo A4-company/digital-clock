@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.clock-container {
+    text-align: center;
+    color: #fff;
+}
+
+.date {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00f, #f0f);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    margin: 0 10px;
+    padding: 20px;
+    background: linear-gradient(145deg, #1e1e1e, #2b2b2b);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #353535;
+    text-align: center;
+}
+
+.number {
+    font-size: 4em;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #00f, #f0f);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.label {
+    font-size: 1.5em;
+    background: linear-gradient(90deg, #00f, #f0f);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title {
+    font-size: 2em;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00f, #f0f);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 600px) {
+    .number {
+        font-size: 3em;
+    }
+
+    .label {
+        font-size: 1em;
+    }
+
+    .date {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        color: #00f;
+    }
+    50% {
+        color: #f0f;
+    }
+    100% {
+        color: #00f;
+    }
+}
